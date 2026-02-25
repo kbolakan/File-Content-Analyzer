@@ -17,11 +17,10 @@ namespace WindowsFormsApp1.Services
             if (string.IsNullOrWhiteSpace(text))
                 return result;
 
-            // 1. Noktalama işaretlerini kusursuz say
+            // Noktalama işaretlerini kusursuz say
             result.TotalPunctuations = text.Count(char.IsPunctuation);
 
-            // 2. Metindeki TÜM kelimeleri çıkar (Regex ile sadece harfleri ve rakamları alıyoruz)
-            // \p{L} -> Tüm dillerdeki (Türkçe dahil) harfleri temsil eder.
+            // \p{L} -> Tüm dillerdeki harfleri temsil eder.
             // \p{Nd} -> Rakamları temsil eder.
             MatchCollection matches = Regex.Matches(text.ToLower(), @"[\p{L}\p{Nd}]+");
 
@@ -29,7 +28,7 @@ namespace WindowsFormsApp1.Services
             {
                 string word = match.Value;
 
-                // Kelimeyi sözlüğe ekle veya sayısını artır (Bağlaç, harf, uzunluk fark etmeksizin)
+                // Kelimeyi sözlüğe ekle veya sayısını artır
                 if (result.WordFrequencies.ContainsKey(word))
                 {
                     result.WordFrequencies[word]++;
@@ -40,7 +39,7 @@ namespace WindowsFormsApp1.Services
                 }
             }
 
-            // 3. Benzersiz kelime sayısını hesapla
+            // kelime sayısını hesapla
             result.TotalDistinctWords = result.WordFrequencies.Count;
 
             return result;

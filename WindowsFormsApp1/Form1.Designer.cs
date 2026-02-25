@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1 // DİKKAT: BURAYA KENDİ PROJE ADINI YAZMAYI UNUTMA!
+﻿namespace WindowsFormsApp1
 {
     partial class Form1
     {

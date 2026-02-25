@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UglyToad.PdfPig;
-using WindowsFormsApp1.Services; // Yüklediğimiz PDF kütüphanesi
+using WindowsFormsApp1.Services; // PDF kütüphanesi
 
 namespace WindowsFormsApp1
 {

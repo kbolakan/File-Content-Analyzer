@@ -8,9 +8,6 @@ namespace WindowsFormsApp1
 {
     internal static class Program
     {
-        /// <summary>
-        /// Uygulamanın ana girdi noktası.
-        /// </summary>
         [STAThread]
         static void Main()
         {

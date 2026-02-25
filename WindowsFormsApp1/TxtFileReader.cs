@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp1.Services // KENDİ PROJE ADINI YAZMAYI UNUTMA
+namespace WindowsFormsApp1.Services
 {
     public class TxtFileReader : IFileReader
     {
@@ -18,4 +18,4 @@ namespace WindowsFormsApp1.Services // KENDİ PROJE ADINI YAZMAYI UNUTMA
             }
         }
     }
-} // <- Dosya tam olarak burada, bu parantezle bitmeli. Altında başka hiçbir şey (özellikle fazladan bir } işareti) olmamalı.
+}
