@@ -53,7 +53,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(87, 121);
+            this.btnLogin.Location = new System.Drawing.Point(144, 84);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 2;
@@ -63,10 +63,12 @@
             // lnkRegister
             // 
             this.lnkRegister.AutoSize = true;
-            this.lnkRegister.Location = new System.Drawing.Point(94, 181);
+            this.lnkRegister.Location = new System.Drawing.Point(13, 129);
             this.lnkRegister.Name = "lnkRegister";
-            this.lnkRegister.Size = new System.Drawing.Size(0, 16);
+            this.lnkRegister.Size = new System.Drawing.Size(175, 16);
             this.lnkRegister.TabIndex = 3;
+            this.lnkRegister.TabStop = true;
+            this.lnkRegister.Text = "Please click here to register.";
             // 
             // label1
             // 
